@@ -834,10 +834,6 @@ header {
   transition: 0.2s color;
 }
 
-.service a {
-    color: #868F9B;
-}
-
 .service:hover h3 {
     color: #fff;
 }
@@ -1786,7 +1782,7 @@ header {
 }
 
 .popup {
-  margin: 57px auto;
+  margin: 27px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -1795,6 +1791,8 @@ header {
   transition: all 5s ease-in-out;
   color: #333;
   font-size:12px;
+  overflow-y: auto;
+  height: 90%;   
 }
 
 .popup h2 {
@@ -1816,6 +1814,5 @@ header {
   color: #bd2f2c;
 }
 .popup .content {
-  max-height: 30%;
-  overflow: auto;
+  max-height: 100%;
 }
