@@ -133,6 +133,10 @@ ul, ol {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.smx-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 
 /* --  background section  -- */
@@ -147,6 +151,12 @@ ul, ol {
     background-color: #1C1D21;
 }
 
+.bg-red {
+    background-color: #bd2f2c;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+	color: #FFF;
+}
 
 /* --  background image section  -- */
 
@@ -379,7 +389,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         right: -50%;
         top: 0;
         background-color: #bd2f2c;
-        width: 200px;
+        width: 320px;
         -webkit-box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
         box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
         -webkit-transform: translateY(15px) translateX(50%);
@@ -392,7 +402,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     .main-nav>.has-dropdown>.dropdown {
         top: 100%;
-        right: 50%;
+        right: 0%;
     }
     .main-nav>.has-dropdown>.dropdown .dropdown.dropdown-left {
         right: 150%;
@@ -604,6 +614,9 @@ header {
 .header-wrapper h2 {
     display: inline-block;
     margin-bottom: 0px;
+    margin-top: 7px;
+	color: #FFFFFF;
+    font-size: 24px;
 }
 
 .header-wrapper .breadcrumb {
@@ -613,11 +626,11 @@ header {
 }
 
 .header-wrapper .breadcrumb .breadcrumb-item.active {
-    color: #868F9B;
+    color: #ef9e9d;
 }
 
 .breadcrumb>li+li:before {
-    color: #868F9B;
+    color: #FFF;
 }
 
 
