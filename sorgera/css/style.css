@@ -125,8 +125,8 @@ ul, ol {
 }
 
 .md-padding {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .sm-padding {
@@ -137,14 +137,19 @@ ul, ol {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
-
+.smxl-padding {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 /* --  background section  -- */
 
 .bg-grey {
     background-color: #FAFAFA;
     border-top: 1px solid #EEE;
     border-bottom: 1px solid #EEE;
+}
+.bg-black {
+    background-color: #000000;
 }
 
 .bg-dark {
@@ -389,7 +394,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         right: -50%;
         top: 0;
         background-color: #bd2f2c;
-        width: 320px;
+        width: 250px;
         -webkit-box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
         box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
         -webkit-transform: translateY(15px) translateX(50%);
@@ -1150,7 +1155,6 @@ header {
     color: #bd2f2c;
     margin-right: 5px;
 }
-
 /*------------------------------------*\
 	Blog post
 \*------------------------------------*/
@@ -1512,8 +1516,26 @@ header {
     text-align: center;
     font-size: 14px;
     text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.footer-links{
+    text-align: center;
+    font-size: 14px;
     margin: 0;
 }
+.footer-links a{
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+	color:#868F9B;
+}
+.footer-links a:hover{
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+	color:#bd2f2c;
+}
+
 
 
 /*------------------------------------*\
@@ -1828,4 +1850,156 @@ header {
 }
 .popup .content {
   max-height: 100%;
+}
+
+#gdpr-box { 
+	position:fixed;
+	z-index: 100;
+	display: block;
+	width: 100%;
+	background: #0b0b0b;
+	text-align:center;
+	color: #EEE;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+    opacity: 0.8; 
+	}
+#gdpr-box p {
+	padding: 20px 20px 0px 20px;
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 0;
+	}
+#gdpr-box a {
+	color: #bd2f2c;
+	}
+#gdpr-box button.gdpr-button-accept {
+	background: none;
+	color: #fff;
+	font-size: 12px;
+	}
+#gdpr-box button.gdpr-button-accept,
+#gdpr-box a.gdpr-button-settings {
+	display: inline-block;
+	border: 1px solid #fff;
+	padding: 6px 5px 4px;
+	text-decoration: none;
+	margin: 0 0 20px 20px;
+	border-radius: 2px;
+	font-weight: 800;
+	font-size: 12px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	}
+#gdpr-box button.gdpr-button-accept:hover {
+	cursor: pointer;
+	}
+#gdpr-box button.gdpr-button-accept:hover,
+#gdpr-box a.gdpr-button-settings:hover {
+	background: #bd2f2c;
+	}
+	
+
+/*------------------------------------*\
+	Products
+\*------------------------------------*/
+
+.products {
+    position: relative;
+    background-color: #F4F4F4;
+    padding: 40px 20px;
+    margin: 15px 0px;
+	border: #FEFEFE 1px solid;
+	transition-property: width, height;
+	transition: transform 0.1s; /* Animation */
+	cursor:pointer;
+}
+
+.products:hover {
+    position: relative;
+    background-color: #EEEEEE;
+    padding: 40px 20px;
+    margin: 15px 0px;
+	border: #FEFEFE 1px solid;
+	transition-property: width, height;
+	transition: transform 0.1s; /* Animation */
+	cursor:pointer;
+}
+
+.products-img {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.products-img>img {
+	width: 100%;
+}
+
+.products .products-content a{
+    position: relative;
+    z-index: 11;
+	color:#333333;
+}
+
+.products .products-content h3 {
+    margin-bottom: 5px;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+	color:#000000;
+}
+
+.products:hover .products-content a{
+    position: relative;
+    z-index: 11;
+	color:#bd2f2c;
+}
+
+.products:hover .products-content h3 {
+    margin-bottom: 5px;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+	color:#bd2f2c;
+}
+/*------------------------------------*\
+	Cookies
+\*------------------------------------*/
+
+.cookies {
+    margin: 10px 0px;
+}
+.cookies i {
+    float: left;
+	width:30px;
+	height:30px;
+    padding: 6px;
+    border-radius: 1%;
+    color: #bd2f2c;
+    border: 1px solid #bd2f2c;
+    margin-right: 5px;
+}
+
+.background {
+    position: absolute;
+    box-sizing: border-box;
+    background: url('img/background1.jpg');  /* YOUR FIRST IMAGE HERE */
+    background-attachment: cover;
+    background-position: center;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+    background: #111111;
 }
