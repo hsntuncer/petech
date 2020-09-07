@@ -44,17 +44,26 @@
 	<meta name="theme-color" content="#ffffff">
     <meta content="Sorgera Danışmanlık - Danışmanlık Hizmetleri, Paket Ürünler, e-Çözümler, SAP Paket Ürünleri" name="description"/>
     <meta content="Sorgera" name="author"/>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37106447-2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177055949-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     
-      gtag('config', 'UA-37106447-2');
+      gtag('config', 'UA-177055949-1');
     </script>
-       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
+    <script type="text/javascript">
+	//FadeOut Cookies Bar
+	$(document).ready(function(){
+	  $("button").click(function(){
+		$("#gdpr-box").fadeOut();
+	  });
+	});
+    </script> 
+     
 </head>
 
 <body>
@@ -73,6 +82,11 @@
 							<img class="logo" src="img/sorgera_logo.png" alt="logo">
 						</a>
 					</div>
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/sap_partner_eco_system.png" alt="logo">
+						</a>
+					</div>      
 					<!-- /Logo -->
 
 					<!-- Collapse nav button -->
@@ -84,42 +98,61 @@
 
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="index.html">Ana Sayfa</a></li>
+					<li><a href="index.html#home">Ana Sayfa</a></li>
 					<li><a href="index.html#about">Biz Kimiz?</a></li>
 					<li class="has-dropdown"><a href="#services">Hizmetlerimiz</a>
 						<ul class="dropdown">
-							<li><a href="index.html#services">SAP Danışmanlık Hizmetleri</a></li>
-							<li><a href="index.html#services">Yazılım ve Ürün Geliştirme</a></li>
-							<li><a href="index.html#services">Proje Yönetimi</a></li>
-							<li><a href="index.html#services">Bakım ve Destek Hizmetleri</a></li>
-							<li><a href="index.html#services">Entegrasyon ve Sistem Mimarlığı</a></li>
-							<li><a href="index.html#services">SAP eDocument - AIF</a></li>                            
-						</ul>						
+							<li><a href="sap_danismanlik_hizmetleri.html">SAP Danışmanlık Hizmetleri</a></li>
+							<li><a href="yazilim_urun_gelistirme.html">Yazılım ve Ürün Geliştirme</a></li>
+							<li><a href="proje_yonetimi.html">Proje Yönetimi</a></li>
+							<li><a href="bakim_destek.html">Bakım ve Destek Hizmetleri</a></li>
+							<li><a href="entegrasyon_sistem_mimarligi.html">Entegrasyon ve Sistem Mimarlığı</a></li>
+							<li><a href="sap_edocument_aif.html">SAP eDocument - AIF</a></li>                            
+						</ul>				
 					</li>
 					<li class="has-dropdown"><a href="#products">Ürünlerimiz</a>
 						<ul class="dropdown">
-							<li><a href="efatura.html">e-Fatura</a></li>
-							<li><a href="gelen_fatura_sap_entegrasyonu.html">Gelen e-Fatura SAP Entegrasyonu</a></li>
-							<li><a href="edefter.html">e-Defter</a></li>
-							<li><a href="earsiv.html">e-Arşiv</a></li>
-							<li><a href="eirsaliye.html">e-İrsaliye</a></li>
-							<li><a href="gelen_irsaliye_sap_entegrasyonu.html">Gelen e-İrsaliye  SAP Entegrasyonu</a></li>    
-                            <li><a href="e_skod_tuik_cozumu.html">E-SKod (TÜİK Kod ve Ölçü Birimi)</a></li>    
-                            <li><a href="ebeyanname.html">e-Beyanname</a></li>    
-                            <li><a href="kayit_saklama_programi.html">Kayıt Saklama Programı</a></li>    
-                            <li><a href="yuklenilen_kdv_paketi.html">Yüklenilen KDV Paketi</a></li>   
-                            <li><a href="proje_yonetim_ve_takip_araci.html">Proje Yönetim ve Takip Aracı</a></li>           
-                            <li><a href="ufrs_cozumleri">UFRS Çözümleri</a></li>
-                            <li><a href="ehesap_ozeti.html">e-Hesap Özeti</a></li>
-                            <li><a href="emutabakat.html">e-Mutabakat</a></li>                            
+							<li class="has-dropdown">
+                               <a href="edonusum_regulasyon_paketleri.html">e-Dönüşüm Çözümleri</a>
+                                <ul class="dropdown">
+                                    <li><a href="efatura.html">e-Fatura</a></li>
+                                    <li><a href="edefter.html">e-Defter</a></li>
+                                    <li><a href="earsiv.html">e-Arşiv</a></li>
+                                    <li><a href="eirsaliye.html">e-İrsaliye</a></li>
+                                    <li><a href="ebeyanname.html">e-Beyanname</a></li>
+                                    <li><a href="ehesap_ozeti.html">e-Hesap Özeti</a></li>   
+                                    <li><a href="emutabakat.html">e-Mutabakat</a></li>                           
+                                </ul>
+                            </li>
+							<li class="has-dropdown">
+                            	<a href="elektronik_belge_entegrasyon_urunleri.html">Entegrasyon Paketleri</a>
+                                <ul class="dropdown">
+                                    <li><a href="gelen_fatura_sap_entegrasyonu.html">Gelen e-Fatura SAP Entegrasyonu</a></li>
+                                    <li><a href="gelen_irsaliye_sap_entegrasyonu.html">Gelen e-İrsaliye SAP Entegrasyonu</a></li>                     
+                                </ul>
+							<li class="has-dropdown">
+                            	<a href="mevzuat_uyumluluk_paketleri.html">Mevzuat Uyumluluk Paketleri</a>
+                                <ul class="dropdown">
+                                    <li><a href="e_skod_tuik_cozumu.html">TÜİK Kod ve Ölçü Birimi Paketi (E-SKod)</a></li>
+                                    <li><a href="kayit_saklama_programi.html">Kayıt Saklama Programı</a></li>  
+                                    <li><a href="yuklenilen_kdv_paketi.html">Yüklenilen KDV Paketi</a></li>       
+                                    <li><a href="geri_kazanim_katilim_payi.html">Geri Kazanım Katılım Payı (GEKAP)</a></li>             
+                                </ul>
+                            </li>
+							<li class="has-dropdown">
+                            	<a href="raporlama_cozumleri.html">Raporlama Çözümleri</a>
+                                <ul class="dropdown">
+                                    <li><a href="proje_yonetim_ve_takip_araci.html">Proje Yönetim ve Takip Aracı</a></li>
+                                    <li><a href="ufrs_cozumleri.html">UFRS Çözümleri</a></li>            
+                                </ul>
+                            </li>                     
 						</ul>						
-					</li>                
-					<li><a href="index.html#interactive">Etkileşim</a></li>
+					</li>                 
+					<li><a href="index.html#interaction">Etkileşim</a></li>
 					<li><a href="index.html#contact">Bize Ulaşın</a></li>
-					<li><a href="index_en.html">EN</a></li>						
+					<li><a href="en/index.html">EN</a></li>
 				</ul>
 				<!-- /Main navigation -->
-
 			</div>
 		</nav>
 		<!-- /Nav -->
@@ -188,22 +221,21 @@
 					<div class="widget">
 						<h3 class="title">DİĞER ÜRÜNLER</h3>
 						<div class="widget-category">
-							<a href="efatura.html">e-Fatura</a>
-							<a href="gelen_fatura_sap_entegrasyonu.html">Gelen e-Fatura SAP Entegrasyonu</a>
-							<a href="edefter.html">e-Defter</a>
-							<a href="earsiv.html">e-Arşiv</a>
-							<a href="eirsaliye.html">e-İrsaliye</a>
-							<a href="gelen_irsaliye_sap_entegrasyonu.html">Gelen e-İrsaliye SAP Entegrasyonu</a>    
-                            <a href="e_skod_tuik_cozumu.html">E-SKod (TÜİK Kod ve Ölçü Birimi)</a>    
-                            <a href="ebeyanname.html">e-Beyanname</a>    
-                            <a href="kayit_saklama_programi.html">Kayıt Saklama Programı</a>    
-                            <a href="yuklenilen_kdv_paketi.html">Yüklenilen KDV Paketi</a>   
-                            <a href="proje_yonetim_ve_takip_araci.html">Proje Yönetim ve Takip Aracı</a>          
-                            <a href="ufrs_cozumleri.html">UFRS Çözümleri</a>
-                            <a href="ehesap_ozeti.html">e-Hesap Özeti</a>      
-                            <a href="emutabakat.html">e-Mutabakat</a>                     
+                            <a href="e_skod_tuik_cozumu.html">TÜİK Kod ve Ölçü Birimi Paketi<br/> (E-SKod)</a>
+                            <a href="kayit_saklama_programi.html">Kayıt Saklama Programı</a>
+                            <a href="yuklenilen_kdv_paketi.html">Yüklenilen KDV Paketi</a>
+                            <a href="geri_kazanim_katilim_payi.html">Geri Kazanım Katılım Payı (GEKAP)</a>             
 						</div>
 					</div>
+					<div class="widget">
+						<h3 class="title">KATEGORİLER</h3>
+						<div class="widget-category">
+                           <a href="edonusum_regulasyon_paketleri.html">e-Dönüşüm Çözümleri</a>
+                           <a href="elektronik_belge_entegrasyon_urunleri.html">Entegrasyon Paketleri</a>
+                           <a href="mevzuat_uyumluluk_paketleri.html">Mevzuat Uyumluluk Paketleri</a>
+						   <a href="raporlama_cozumleri.html">Raporlama Çözümleri</a>                  
+						</div>
+					</div>    
 					<!-- /Category -->
 
 					<!-- Tags -->
@@ -257,21 +289,27 @@
 						<li><a href="https://www.youtube.com/channel/UCra-9Msa02J7HT0HZQSUeog" target="_blank"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
+   					<!-- footer links -->
+					<div class="footer-links">
+						<p><a class="button" href="gizlilik_politikasi.html">Gizlilik Politikası</a> |
+                           <a class="button" href="site_kullanim_kosullari.html">Site Kullanım Koşulları</a> |
+                           <a class="button" href="kkvk.html">KKVK Aydınlatma Metni</a> </p><br/>
+					</div>
+					<!-- /footer links -->                     
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2020. All Rights Reserved by <a href="https://www.sorgera.com" target="_blank">Sorgera</a></p>
+						<p><a href="https://www.sorgera.com" target="_blank">Sorgera</a> Tarafından Tüm Hakları Saklıdır. Copyright © 2020</p>
 					</div>
 					<!-- /footer copyright -->
 
 				</div>
-
 			</div>
 			<!-- /Row -->
 
+          
 		</div>
 		<!-- /Container -->
-
 	</footer>
 	<!-- /Footer -->
 

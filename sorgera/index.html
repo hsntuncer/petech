@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Sorgera Danışmanlık</title>
+	<title>Sorgera Danışmanlık - Sektöre Yön Verin!</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -44,26 +44,34 @@
 	<meta name="theme-color" content="#ffffff">
     <meta content="Sorgera Danışmanlık - Danışmanlık Hizmetleri, Paket Ürünler, e-Çözümler, SAP Paket Ürünleri" name="description"/>
     <meta content="Sorgera" name="author"/>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37106447-2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177055949-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     
-      gtag('config', 'UA-37106447-2');
+      gtag('config', 'UA-177055949-1');
     </script>
-       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
+    <script type="text/javascript">
+	//FadeOut Cookies Bar
+	$(document).ready(function(){
+	  $("button").click(function(){
+		$("#gdpr-box").fadeOut();
+	  });
+	});
+    </script> 
+     
 </head>
 
 <body>
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background1.jpg');">
-			<div class="overlay"></div>
-		</div>
+        <div class="bg-img" style="background-image: url('./img/background1.jpg');"></div>
+        <div class="overlay"></div>
 		<!-- /Background Image -->
 
 		<!-- Nav -->
@@ -76,6 +84,12 @@
 						<a href="index.html">
 							<img class="logo" src="img/sorgera_logo.png" alt="logo">
 							<img class="logo-alt" src="img/sorgera_logo_white.png" alt="logo">
+						</a>
+					</div>
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/sap_partner_eco_system.png" alt="logo">
+							<img class="logo-alt" src="img/sap_partner_eco_system_white.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -91,40 +105,59 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Ana Sayfa</a></li>
 					<li><a href="#about">Biz Kimiz?</a></li>
-					<li class="has-dropdown"><a href="#blog">Hizmetlerimiz</a>
+					<li class="has-dropdown"><a href="#services">Hizmetlerimiz</a>
 						<ul class="dropdown">
-							<li><a href="#services">SAP Danışmanlık Hizmetleri</a></li>
-							<li><a href="#services">Yazılım ve Ürün Geliştirme</a></li>
-							<li><a href="#services">Proje Yönetimi</a></li>
-							<li><a href="#services">Bakım ve Destek Hizmetleri</a></li>
-							<li><a href="#services">Entegrasyon ve Sistem Mimarlığı</a></li>
-							<li><a href="#services">SAP eDocument - AIF</a></li>                            
-						</ul>						
+							<li><a href="sap_danismanlik_hizmetleri.html">SAP Danışmanlık Hizmetleri</a></li>
+							<li><a href="yazilim_urun_gelistirme.html">Yazılım ve Ürün Geliştirme</a></li>
+							<li><a href="proje_yonetimi.html">Proje Yönetimi</a></li>
+							<li><a href="bakim_destek.html">Bakım ve Destek Hizmetleri</a></li>
+							<li><a href="entegrasyon_sistem_mimarligi.html">Entegrasyon ve Sistem Mimarlığı</a></li>
+							<li><a href="sap_edocument_aif.html">SAP eDocument - AIF</a></li>                            
+						</ul>				
 					</li>
 					<li class="has-dropdown"><a href="#products">Ürünlerimiz</a>
 						<ul class="dropdown">
-							<li><a href="efatura.html">e-Fatura</a></li>
-							<li><a href="gelen_fatura_sap_entegrasyonu.html">Gelen e-Fatura SAP Entegrasyonu</a></li>
-							<li><a href="edefter.html">e-Defter</a></li>
-							<li><a href="earsiv.html">e-Arşiv</a></li>
-							<li><a href="eirsaliye.html">e-İrsaliye</a></li>
-							<li><a href="gelen_irsaliye_sap_entegrasyonu.html">Gelen e-İrsaliye  SAP Entegrasyonu</a></li>    
-                            <li><a href="e_skod_tuik_cozumu.html">E-SKod (TÜİK Kod ve Ölçü Birimi)</a></li>    
-                            <li><a href="ebeyanname.html">e-Beyanname</a></li>    
-                            <li><a href="kayit_saklama_programi.html">Kayıt Saklama Programı</a></li>    
-                            <li><a href="yuklenilen_kdv_paketi.html">Yüklenilen KDV Paketi</a></li>   
-                            <li><a href="proje_yonetim_ve_takip_araci.html">Proje Yönetim ve Takip Aracı</a></li>           
-                            <li><a href="ufrs_cozumleri">UFRS Çözümleri</a></li>
-                            <li><a href="ehesap_ozeti.html">e-Hesap Özeti</a></li>
-                            <li><a href="emutabakat.html">e-Mutabakat</a></li>                            
+							<li class="has-dropdown">
+                               <a href="edonusum_regulasyon_paketleri.html">e-Dönüşüm Çözümleri</a>
+                                <ul class="dropdown">
+                                    <li><a href="efatura.html">e-Fatura</a></li>
+                                    <li><a href="edefter.html">e-Defter</a></li>
+                                    <li><a href="earsiv.html">e-Arşiv</a></li>
+                                    <li><a href="eirsaliye.html">e-İrsaliye</a></li>
+                                    <li><a href="ebeyanname.html">e-Beyanname</a></li>
+                                    <li><a href="ehesap_ozeti.html">e-Hesap Özeti</a></li>   
+                                    <li><a href="emutabakat.html">e-Mutabakat</a></li>                           
+                                </ul>
+                            </li>
+							<li class="has-dropdown">
+                            	<a href="elektronik_belge_entegrasyon_urunleri.html">Entegrasyon Paketleri</a>
+                                <ul class="dropdown">
+                                    <li><a href="gelen_fatura_sap_entegrasyonu.html">Gelen e-Fatura SAP Entegrasyonu</a></li>
+                                    <li><a href="gelen_irsaliye_sap_entegrasyonu.html">Gelen e-İrsaliye SAP Entegrasyonu</a></li>                     
+                                </ul>
+							<li class="has-dropdown">
+                            	<a href="mevzuat_uyumluluk_paketleri.html">Mevzuat Uyumluluk Paketleri</a>
+                                <ul class="dropdown">
+                                    <li><a href="e_skod_tuik_cozumu.html">TÜİK Kod ve Ölçü Birimi Paketi (E-SKod)</a></li>
+                                    <li><a href="kayit_saklama_programi.html">Kayıt Saklama Programı</a></li>  
+                                    <li><a href="yuklenilen_kdv_paketi.html">Yüklenilen KDV Paketi</a></li>       
+                                    <li><a href="geri_kazanim_katilim_payi.html">Geri Kazanım Katılım Payı (GEKAP)</a></li>             
+                                </ul>
+                            </li>
+							<li class="has-dropdown">
+                            	<a href="raporlama_cozumleri.html">Raporlama Çözümleri</a>
+                                <ul class="dropdown">
+                                    <li><a href="proje_yonetim_ve_takip_araci.html">Proje Yönetim ve Takip Aracı</a></li>
+                                    <li><a href="ufrs_cozumleri.html">UFRS Çözümleri</a></li>            
+                                </ul>
+                            </li>                     
 						</ul>						
 					</li>                 
-					<li><a href="#interactive">Etkileşim</a></li>
+					<li><a href="#interaction">Etkileşim</a></li>
 					<li><a href="#contact">Bize Ulaşın</a></li>
-					<li><a href="index_en.html">EN</a></li>					
+					<li><a href="en/index.html">EN</a></li>
 				</ul>
 				<!-- /Main navigation -->
-
 			</div>
 		</nav>
 		<!-- /Nav -->
@@ -138,24 +171,22 @@
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1 class="white-text">SEKTÖRE YÖN VERİN!</h1>
-							<p class="white-text">Dijital dönüşüm yolculuğunuzda Sorgera’nın çözüm ve destek paketleriyle işlerinizi geliştirirken sektöre yön verin.
-							</p>
+							<p class="white-text">Dijital dönüşüm yolculuğunuzda Sorgera’nın çözüm ve destek paketleriyle işlerinizi geliştirirken sektöre yön verin.							</p>
 							<a href="#contact"><button class="white-btn">Bizimle İletişime Geçin!</button></a>
-							<a href="#about"><button class="main-btn">Hakkımızda</button></a>
-						</div>
+							<a href="#about"><button class="main-btn">Hakkımızda</button></a>	
+                        </div>
 					</div>
 					<!-- /home content -->
-
 				</div>
 			</div>
 		</div>
-		<!-- /home wrapper -->
+	  <!-- /home wrapper -->
 
 	</header>
 	<!-- /Header -->
 
 	<!-- About -->
-	<div id="about" class="section md-padding">
+	<div id="about" class="section md-padding bg-white">
 
 		<!-- Container -->
 		<div class="container">
@@ -197,7 +228,7 @@
 						<i class="fa fa-mobile"></i>
 						<h3>Etkileşim</h3>
 						<p>Müşterilerimize sunduğumuz ürün ve hizmetlerle en iyi deneyimi sağlarken etkileşimde kalmayı, sürdürülülebilir büyümeyi önemsiyoruz.</p>
-						<a href="#interactive">Detaylı Bilgi</a>
+						<a href="#interaction">Detaylı Bilgi</a>
 					</div>
 				</div>
 				<!-- /about -->
@@ -232,7 +263,7 @@
 						<i class="fa fa-diamond"></i>
 						<h3>SAP Danışmanlık Hizmetleri</h3>
 						<p>Deneyimli ve uzman kadromuz ile SAP’nin tüm ürünlerinde uçtan uca danışmanlık hizmeti veriyoruz.</p>
-						<a class="button" href="#">Detaylı Bilgi</a>							
+						<a class="button" href="sap_danismanlik_hizmetleri.html">Detaylı Bilgi</a>							
 					</div>
 				</div>
 				<!-- /service -->
@@ -243,7 +274,7 @@
 						<i class="fa fa-skyatlas"></i>
 						<h3>Yazılım ve Ürün Geliştirme</h3>
 						<p>SAP hazır paket çözümlerimiz ve ihtiyaçlarınıza yönelik yazılım geliştirme hizmetleri sunuyoruz.</p>
-						<a class="button" href="#">Detaylı Bilgi</a>							
+						<a class="button" href="yazilim_urun_gelistirme.html">Detaylı Bilgi</a>							
 					</div>
 				</div>
 				<!-- /service -->
@@ -254,7 +285,7 @@
 						<i class="fa fa-cogs"></i>
 						<h3>Proje Yönetimi</h3>
 						<p>SAP Activate metedolojisi kullanılarak, S/4HANA ve en iyi iş çözümlerinin uygulanmasını sağlıyoruz.</p>
-						<a class="button" href="#">Detaylı Bilgi</a>							
+						<a class="button" href="proje_yonetimi.html">Detaylı Bilgi</a>							
 					</div>
 				</div>
 				<!-- /service -->
@@ -265,7 +296,7 @@
 						<i class="fa fa-shield"></i>
 						<h3>Bakım ve Destek Hizmetleri</h3>
 						<p>SAP destek, sistem barındırma, basis destek ve düzenli bakım ya da anlık danışmanlık destek modelleriyle yanınızdayız.</p>
-						<a class="button" href="#">Detaylı Bilgi</a>						
+						<a class="button" href="bakim_destek.html">Detaylı Bilgi</a>						
 					</div>
 				</div>
 				<!-- /service -->
@@ -276,7 +307,7 @@
 						<i class="fa fa-pencil"></i>
 						<h3>Entegrasyon ve Sistem Mimarlığı</h3>
 						<p>Kurumsal mimarilerin, kompleks entegrasyon ihtiyaçlarını en yüksek güvenlik ve erişilebilirlik standardlarıyla yönetiyoruz.</p>
-						<a class="button" href="#">Detaylı Bilgi</a>						
+						<a class="button" href="entegrasyon_sistem_mimarligi.html">Detaylı Bilgi</a>						
 					</div>
 				</div>
 				<!-- /service -->
@@ -287,44 +318,10 @@
 						<i class="fa fa-anchor"></i>
 						<h3>SAP Document Compliance<br/>(eDocument - AIF)</h3>
 						<p>SAP Document Compliance(AIF) teknik ve süreç danışmanlığı veriyoruz.</p></a>
-						<a class="button" href="#popup1">Detaylı Bilgi</a>
+						<a class="button" href="sap_edocument_aif.html">Detaylı Bilgi</a>
 					</div>
 				</div>
-	<!-- /Service -->
-				<div id="popup1" class="popup-overlay">
-					<div class="popup">
-						<h3>SAP Document Compliance (eDocument - AIF)</h3>
-						<a class="close" href="#">&times;</a>
-						<div class="content">
-						
-							<img class="img-responsive" src="img/sap_edocument.jpg" alt="logo"><br/><br/>
-							<p>SAP Document Compliance ( eDocument veya AIF ), çoğu ülkede müşterilerin yasal makamlara elektronik olarak vermesi gereken İrsaliye, Fatura, Arşiv, Alacak Dekontu, Borç Dekontu,Vergi Sertifikası gibi  iş belgeleridir. SAP, şirketlerin elektronik olarak belge oluşturmak zorunda olduğu e-belge çözümünü AIF olarak sunmaktadır.</p>
-
-							<p>AIF, işlem verilerini gerekli XML biçimine eşlemek için kullanılır. AIF ayrıca aşağıdaki temel özellikleri sağlar;<br/><br/></p>
-
-							<ul>
-								<li>&#8226; Birden fazla ülke ve eDocument türü için tek bir yaklaşım</li>
-								<li>&#8226; ERP'de iş izleme</li>
-								<li>&#8226; eDocument verilerinin yapısal gösterimi</li>
-								<li>&#8226; Takip işlemlerinin yönetimi (örn. Yeniden gönderme, yetkilendirmeyi doğrulama)</li>
-								<li>&#8226; Değiştirilen XML dosyalarını görüntüleme / indirme</li>
-								<li>&#8226; Kaynak belgelere ulaşma (örn. İrsaliye, SD Fatura, FI Fatura)</li>
-								<li>&#8226; Esnek Uyarlama Yapısı ve Süreç Yönetimi</li>
-								<li>&#8226; Ülkeye özgü formatlar için eksiksiz veri yapıları içeren SAP CPI'ya bağlanma proxy'leri<br/><br/></li>
-							</ul>
-
-							<p>Sorgera olarak SAP Document Compliance(AIF) teknik ve süreç danışmanlığı hizmetlerini vermekteyiz</p>						
-							<div class="blog-tags">
-								<h5>Etiket :</h5>
-								<a href="#"><i class="fa fa-tag"></i>SAP Document Compliance</a>
-								<a href="#"><i class="fa fa-tag"></i>SAP eDocument</a>
-								<a href="#"><i class="fa fa-tag"></i>SAP AIF</a>
-								<a href="#"><i class="fa fa-tag"></i>eDönüşüm</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /service -->
+			    <!-- /Service -->
 			</div>
 			<!-- /Row -->
 
@@ -334,7 +331,7 @@
 	</div>
 
 	<!-- Why Choose Us -->
-	<div id="company" class="section md-padding bg-grey">
+	<div id="company" class="section md-padding">
 
 		<!-- Container -->
 		<div class="container">
@@ -381,7 +378,7 @@
 	<!-- /Why Choose Us -->
 
 	<!-- Team -->
-	<div id="interactive" class="section md-padding">
+	<div id="interaction" class="section md-padding">
 
 		<!-- Container -->
 		<div class="container">
@@ -522,7 +519,7 @@
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
 						<h3>E-Posta</h3>
-						<p>info@sorgera.com</p>
+						<p><a href="mailto:info@sorgera.com">info@sorgera.com</a></p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -557,7 +554,7 @@
 	<!-- /Contact -->
 
 		<!-- Google Map -->
-		<div class="map height-300">
+		<div class="map height-300 bg-dark">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.7875725648223!2d29.115197715567945!3d40.98613217930302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac6185fb4ef93%3A0x1a1fc18ca230a5e!2sG%C3%BCvenHasan%20Sitesi!5e0!3m2!1str!2str!4v1594296633431!5m2!1str!2str" width="100%" height="300px;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 		
@@ -588,24 +585,38 @@
 						<li><a href="https://www.youtube.com/channel/UCra-9Msa02J7HT0HZQSUeog" target="_blank"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
+   					<!-- footer links -->
+					<div class="footer-links">
+						<p><a class="button" href="gizlilik_politikasi.html">Gizlilik Politikası</a> |
+                           <a class="button" href="site_kullanim_kosullari.html">Site Kullanım Koşulları</a> |
+                           <a class="button" href="kkvk.html">KKVK Aydınlatma Metni</a> </p><br/>
+					</div>
+					<!-- /footer links -->                     
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2020. All Rights Reserved by <a href="https://www.sorgera.com" target="_blank">Sorgera</a></p>
+						<p><a href="https://www.sorgera.com" target="_blank">Sorgera</a> Tarafından Tüm Hakları Saklıdır. Copyright © 2020</p>
 					</div>
 					<!-- /footer copyright -->
 
 				</div>
-
 			</div>
 			<!-- /Row -->
 
+          
 		</div>
 		<!-- /Container -->
-
 	</footer>
 	<!-- /Footer -->
-
+    
+    <!-- Cookies -->
+    <div id="gdpr-box" class="cookies-accept">
+       <p>Web sitemizdeki deneyiminizi geliştirmek için çerezler kullanıyoruz. Bu sayfayı ziyaret ederek <a href="cerez_politikasi.html" class="cb-policy">Sorgera İnternet Sitesi Çerez Politikası</a>’nı kabul etmiş olursunuz.
+       <button class="gdpr-button-accept" id="hide">Çerezleri Kabul Ediyorum.</button>
+       <!--<a href="/link-to-cookie-policy" class="gdpr-button-settings">Change settings</a>-->
+    </div>  
+    <!-- /Cookies -->
+    
 	<!-- Back to top -->
 	<div id="back-to-top"></div>
 	<!-- /Back to top -->
@@ -620,14 +631,12 @@
 		</div>
 	</div>
 	 <!-- /Preloader  -->
-
 	<!-- jQuery Plugins -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-
 </body>
 
 </html>
