@@ -1981,6 +1981,19 @@ header {
     margin-right: 5px;
 }
 
+/*------------------------------------*\
+	Interest
+\*------------------------------------*/
+
+.section-interest {
+    position: relative;
+    margin-bottom: 60px;
+}
+/*------------------------------------*\
+	Cookies
+\*------------------------------------*/
+
+
 .background {
     position: absolute;
     box-sizing: border-box;
